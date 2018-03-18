@@ -32,11 +32,66 @@
                     <h2>Oh, hey there!</h2>
                     <h5>Have a listen to the latest news in sports:</h5>
                     
-                    <div class="soundcloud">
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/405680745&amp;color=%2301a093&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
-                        </iframe>
+                    <div id="soundcloud">
+                        Loading
                     </div>
+                    
+                    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+                    <script>
+                    	/*
+                    		This script will connect to soundcloud and grab the required track (normally the last posted one)
+                    		and display it through an iframe.
+                    	*/
+
+
+                        //SoundCloud embed code, the placeholder is <REPLACE_ME_PLS>
+                        const SOUNDCLOUD_FRAME = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<REPLACE_ME_PLS>&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>'
+                        const SEARCH_FOR_STR = "episode"//must be lowwercase
+
+
+                        //This function just uses the embed link and replaces the placeholder with the id of the track
+                        var getSCFrame = function (trackId) { return SOUNDCLOUD_FRAME.replace("<REPLACE_ME_PLS>", trackId); }
+                        //Search for the best fitting track, normally just the first
+                        var searchTracks = function (tracks) {
+                    		/*
+                    		if you want to search for the first track starting with a name
+                    
+                    		for(var track in tracks)
+                    		{
+                    			if(track.title.toLowerCase().startsWith(SEARCH_FOR_STR))
+                    				return track
+                    		}
+                    		*/
+                            return tracks[0];
+                        }
+
+                        //Init the soundcloud api
+                        SC.initialize({
+                            //Random Id we stole off a wordpress plugin
+                            client_id: '19878bb8fec7b82ae70433555ec7d7dd',
+                            //Can be whatever you want, we don't use it anyway
+                            redirect_uri: 'http://example.com/callback'
+                        });
+
+                        //387260336 is your accounts id
+                        //It'll pull all your tracks in an array
+                        SC.get('/users/387260336/tracks').then(function (tracks) {
+                            var bestFitTrack = searchTracks(tracks);
+                            //inersets iframe into div tag with "soundcloud" as it's id
+                            var soundcloudArea = document.getElementById("soundcloud");
+                            //Inject the iframe content into the soundcloud area
+                            soundcloudArea.innerHTML = getSCFrame(bestFitTrack.id);
+                        }).catch(function (error) {
+                            //Could fail if there are too many requests at once
+                            console.log(error)
+                        });
+                    </script>
+
+                    <!-- <div class="soundcloud">
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/412705686&amp;color=%2301a093&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
+                        </iframe>
+                    </div> -->
 
                     <img id="itunes" onclick="location.href='itms://itunes.apple.com/nz/podcast/casualsportstalk/id1350600477?mt=2&ign-itsct=1350600477-1350600477&ign-itscg=0176&ign-mpt=uo%3D4'" src="./img/podcast.svg" alt="iTunes Podcast">
 
@@ -51,30 +106,37 @@
                     
                     <div class="article-bucket">
                         <article>
-                            <div onclick="location.href='test_article.html'" class="article-head">
-                                <h2>NBA Fantasy Path to the Finals</h2>
-                                <h4>Ethan Crystal - Feb 17th 2018</h4>
+                            <div onclick="location.href='http://casualsportstalk.blogspot.co.nz/2018/03/2018-nfl-mock-draft-20.html'" class="article-head">
+                                <h2>2018 NFL Mock Draft</h2>
+                                <h4>Ethan Crystal - Mar 6th 2018</h4>
                             </div>
 
     <!-- //////////////////////////// article bellow //////////////////////////////////////// -->
                             <p>
-                                The NBA All Star weekend is here, marking just past the halfway point in the NBA season. While the NBA season ends in just
-                                a couple of months, the NBA fantasy season ends just a few weeks before, meaning this is crunch time for any NBA fantasy
-                                team trying to make the playoffs. A ton of leagues have their trade deadlines coming up very soon, if they haven’t passed
-                                already. Fantasy teams, just like real NBA teams, are looking for the final pieces they need to go for that deep playoff
-                                run. Whether it’s through trade or pickup, there are some players out there who can make a difference on YOUR roster
-                                from now until the finals. Here are 5 players you should buy/pickup & 5 players you should trade/drop before it’s too
-                                late!
+                                After the NFL Combine that took place last weekend in Indianapolis, I felt a second version of my mock draft was certainly
+                                needed. Mock draft season lives, and many more drafts will be released in between now and April 26th. 
                             </p>
+                            <br>
+                            <p>
+                                The second version of CST’s official Mock Draft takes into account all the moves NFL teams have made from the release of
+                                the first mock draft until now. As well, this mock draft is the first mock draft in the series that will take into account
+                                the results of the recent NFL Combine.
+                            </p> 
+                            <br>
+                            <p>
+                                Just a reminder that this Mock Draft 2.0 is still subject to a ton of changes, but takes into account
+                                all the CURRENT roster and needs of all NFL teams (no hypothetical free agent signings).
+                            </p>
+                            <br>
                             
                             <!-- &&&&&&&&&&& Info for image bellow &&&&&&&&&&& -->
                             <div class="image-container">
-                                <img src="../img/philly_eagles.png" alt="eagles-logo">
+                                <img src="https://nesncom.files.wordpress.com/2018/01/saquon-barkley_opt.jpg?w=640" alt="img">
                             
-                                <h4>~ Buy ~</h4>
+                                <h4>Saquon Barkley</h4>
                             
                                 <!-- When you source an image, right click on the image and "copy image address, then place it bellow" -->
-                                <a class="image-source" href="https://nbcprobasketballtalk.files.wordpress.com/2018/02/ap_18037227258518-e1518033684472.jpg?w=1220&h=686&crop=1">
+                                <a class="image-source" href="">
                                     image source
                                 </a>
                             
@@ -85,22 +147,12 @@
                             <h2>1. Bogdan Bogdanovic - SG, SF - Sacramento Kings (37% owned in Yahoo leagues)</h2>
                             <p>
                                 The first player on the list is a name not many people know at this moment. Bogdan originally came from the Euro League and
-                                was drafted by Phoenix in the 2014 NBA draft before being traded to Sacramento in the Marquese Chriss deal. In his first
-                                season up to now, Bogdan is averaging 11.5 points, 3.2 assists and 2.7 rebounds per game (solid numbers for a rookie).
-                                This isn’t what makes him an interesting pickup now though. Bogdan seems to have a ton of upside in picking him up, and
-                                the recent numbers (albeit in a short time frame) to be worth a waiver flyer. With the Kings in tank mode, the best course
-                                of action for them would be to put the ball in their young players hands and give them the experience they need to develop.
-                                This means more minutes for young role players like Justin Jackson, Frank Mason III, Skal Labissiere and more offense
-                                running through starters like De’Aaron Fox and Bogdan Bogdanovic. While Fox has shown some inconsistencies, Bogdan seems
-                                to be the focal point of this Kings offense. His minutes have increased, 31.6 over his past 5 games, and so has his productivity.
-                                Over those same 5 games, he’s averaging 15.4 points 4.8 assists and 4.8 rebounds per game. Another reason to buy the
-                                Bogdan hype? He just shined this weekend, taking home MVP of the 2018 Rising Stars challenge, leading Team World to a
-                                155-124 win over Team USA with his 26 points, 4 rebounds and 6 assists.
+                                was drafted by Pho26 points, 4 rebounds and 6 assists.
                             </p>
     <!-- //////////////////////////// article above //////////////////////////////////////// -->
                             
                             <div class="bottom-fade-section">
-                                <div onclick="location.href='test_article.html'" class="read-more-button">
+                                <div onclick="location.href='http://casualsportstalk.blogspot.co.nz/2018/03/2018-nfl-mock-draft-20.html'" class="read-more-button">
                                     Read more...
                                 </div>
                             </div>
@@ -111,7 +163,7 @@
             </div> <!-- end CONTAINER -->
         </div>
 
-        <footer><p>&copy; LTM designs</p></footer>
+        <!-- <footer><p>&copy; LTM designs</p></footer> -->
     </div>
 </body>
 </html>
