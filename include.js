@@ -47,7 +47,7 @@ document.write('\
             <div onclick="location.href=\'https://soundcloud.com/user-770681286\';" class="flex-container-item" style="flex-grow: 1;">\
                 Podcast\
             </div>\
-            <div onclick="location.href=\'http://casualsportstalk.blogspot.ca/\'" class="flex-container-item" style="flex-grow: 1;">\
+            <div onclick="location.href=\'articles.html\'" class="flex-container-item" style="flex-grow: 1;">\
                 Articles\
             </div>\
             <div onclick="location.href=\'https://twitter.com/CasualSportsPod\'" class="flex-container-item" style="flex-grow: 1;">\
@@ -56,7 +56,7 @@ document.write('\
             <div onclick="location.href=\'https://www.facebook.com/CasualSportsTalk/\'" class="flex-container-item" style="flex-grow: 1;">\
                 Facebook\
             </div>\
-            <div onclick="location.href=\'https://invoicesherpa.com\'" class="flex-container-item" style="flex-grow: 1;">\
+            <div onclick="location.href=\'https://invoicesherpa.com\'" class="flex-container-item" style="flex-grow: 4;">\
                 Our Sponsor\
             </div>\
             <!-- <div class="flex-container-item" style="flex-grow: 1;">\

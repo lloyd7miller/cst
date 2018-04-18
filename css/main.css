@@ -1,0 +1,461 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+    /* background: #026058; */
+    background: white;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/********************************************************************************/
+
+/* SIDENAV */
+@media only screen and (min-width: 1001px){
+    .sidenav{
+        display: none;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width: 1000px){
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 18px 8px 18px 32px;
+        text-decoration: none;
+        font-size: 33px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        line-height: 0.85em;
+        right: 25px;
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    .sidenav ul{ /* this is also refered to by its id "articles" */
+        list-style: none;
+        margin: 0;
+    }
+
+    .sidenav ul a{
+        font-size: 29px;
+        padding: 5px 0 20px 30px;
+
+    }
+
+    @media screen and (max-height: 650px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+/********************************************************************************/
+
+/* HEADER */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (min-width: 1001px){
+    .flex-container{
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        text-align: center;
+    /* /////////////   problem when making the header smaller then 90px...   /////////// */
+        height: 90px; 
+        background: #01a093;
+    }
+
+    #cst-top-logo{
+        min-width: 260px;
+        border: none;
+        flex-grow: 0;
+    }
+
+    .flex-container > div{
+        color: white;
+        font-size: 1.2em;
+        width: 10%;
+        border-left: solid rgba(0, 0, 0, 0) 1px; 
+        min-width: 93px; /* when we do this, it stops the squishing... 
+                            --> need to adjust for lower res... */
+    }
+
+    /* /////////////   how to slowly change the bkgrnd color   /////////// */
+
+    #cst-top-logo:hover{
+        background: none;
+    }
+    
+    .flex-container div:hover{
+        cursor: pointer;
+        background: #017b71;
+        border-left: solid rgb(0, 0, 0) 1px; 
+    }
+
+        #filler{
+            display: none;
+        }
+
+    .flex-container img{
+        float: left;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* /////////////   how to center text top and bottom   /////////// */
+    .flex-container .flex-container-item{
+        padding-top: 34px;
+    }
+
+    .menu-button{
+        display: none; /* Don't need the menu button here :) */
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width: 1000px){
+    .flex-container{
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        text-align: center;
+        max-height: 110px;
+    }
+
+    .flex-container > div{
+        width: 400px;
+    }
+
+    .flex-container div#filler {
+        background: #01a093;
+    }
+
+        #filler-left{ /* because in the larger display style sheet, 
+            we hide this filler to push the CST logo to the left */
+            flex-grow: 2;
+            background: #01a093;
+        }
+
+    .flex-container a{
+        height: inherit;
+        width: inherit;
+    }
+
+    .flex-container img{
+        /* vertical-align: middle; fixes the magic whitespace horizontally*/
+        /* line-height: 0; fixes the magic whitespace vertically */ 
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flex-container-item{
+        display: none;
+    }
+
+    /* @media only screen and (min-width: 700px){
+        #cst-top-logo{
+            max-width: 347px;
+        }
+
+        .menu-button{
+            max-width: 150px;
+        }
+    } */
+
+    .menu-button{
+        min-width: 80px;
+        max-width: 124px;
+        border-right: 1px solid rgba(0, 0, 0, 0.886);
+        background: #01a093;
+    }
+
+    #three-bars{
+        cursor: pointer;
+        /* background: red; */
+        display: table;
+        margin: auto;
+        margin-top: 16px;
+    }
+    #three-bars div{
+        width: 52px;
+        height: 6px;
+        background-color: white;
+        border-radius: 1px;
+        margin: 10px 0;
+    }
+
+    #cst-top-logo{
+        min-width: 260px;
+        max-width: 400px;
+        border: none;
+        flex-grow: 5;
+    }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* END HEADER */
+
+
+
+/********************************************************************************/
+
+/* MAIN CONTENT AREA */
+
+/********************************************************************************/
+/* where am I? */
+.content ul{
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: steelblue;
+}
+
+.content ul a{
+    text-decoration: none;
+    color: steelblue;
+}
+
+.content ul a:hover{
+    text-decoration: underline;
+}
+
+.content ul li{
+    display: inline;
+}
+
+.content ul a:after{
+    color: grey;
+    content: " \\";
+}
+
+.content ul a:last-child:after{ /* we dont want too many seperators! */
+    content: none;
+}
+
+/* End where am I? */
+/********************************************************************************/
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (min-width: 1210px){
+    .content{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (min-width: 1000px) and (max-width: 1210px){
+    #main {
+        transition: margin-left .5s;
+    }
+
+    .content{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width: 1024px){
+    .content{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.content{
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px; /* to account for the margin of a p tag */
+
+}
+
+.content h5{
+    margin: 10px;
+    margin-left: 0; margin-right: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.content h6{
+    margin: 10px;
+    margin-left: 0; margin-right: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.content p{
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+    /* SOUNDCLOUD */
+    .soundcloud{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    /* ARTICLE */
+
+    .article-bucket{
+        margin-top: 20px;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    @media only screen and (min-width: 1000px) and (max-width: 1080px){
+        .content article:first-of-type{
+            margin-left: 0%;
+        }
+    }
+    
+    @media only screen and (min-width: 1000px){
+        /* /////////////   how to center articles left-right (+ proper alignment padding)  /////////// */
+
+        .content article{
+            width: 30%;
+            display: inline-block;
+            border-radius: 10px;
+            background: #01a09322;
+            margin-left: 1%;
+            padding: 10px;
+            margin-bottom: 2.5%;
+        }
+    }
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .content article{
+        vertical-align: top; /* this fixes the default bottom allignment */
+        height: 70vh; /* height of the articles on main page (the previews) */
+        position: relative;
+    }
+    .content article h2{ /* title */
+        font-size: 1.7em;
+    }
+
+    .content article h3{ /* subtitle */
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 2em;
+        margin: 0;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .content article h5{ /* sub-subtitle */
+        font-size: 1em;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .content article h4{ /* author + other info */
+        padding-top: 5px;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #2e2e2eac;
+    }
+
+    .content article p{
+        margin-top: 0; 
+        font-size: 1.1em;
+        line-height: 2em;
+        padding-top: 5px;
+    }
+
+    .content article p:first-of-type{
+        padding-top: 10px;
+    }
+
+    .content article img{
+        width: 70%;
+        display: block;
+        margin: auto;
+        border-radius: 4px;
+    }
+
+
+
+
+/********************************************************************************/
+
+/* FOOTER */
+
+footer{
+    color: rgba(255, 255, 255, 0.461);
+    width: 100%;
+    /* overflow: hidden; */
+    background: rgba(0, 0, 0, 0.482);
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+    footer a, footer p{
+        /* color: rgb(164, 164, 164); */
+        font-size: 10px;
+        line-height: 120%;
+        text-align: center;
+        margin: 0;
+    }
+
+    footer a{
+        text-decoration: underline;
+    }
+
+
