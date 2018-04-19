@@ -85,16 +85,16 @@
 
 .content .see-more-articles{
     background: rgb(235, 210, 24); /* alt color #3282d8 */
-    box-shadow: 5px 5px 10px grey;
+    /* box-shadow: 5px 5px 10px grey; */
     color: black;
     display: block;
     border-radius: 5px;
-    border: 1px solid black;
+    border: solid rgba(0, 0, 0, 0.591) 1px;
     font-size: 0.9em;
     padding: 10px;
     margin: 25px auto;
     height: auto;
-    width: 200px;
+    width: 50%;
     text-align: center;
     font-size: 1.5em;
 }
@@ -130,8 +130,7 @@ article .bottom-fade-section .read-more-button{
     padding: 5px;
     background: #ebd218;
     border-radius: 5px;
-    border: solid black 1px;
-    text-align: center;
+    border: solid rgba(0, 0, 0, 0.500) 1px;
     float: right;
     margin: 0 10px 10px 0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -139,6 +138,7 @@ article .bottom-fade-section .read-more-button{
 
 article .bottom-fade-section .read-more-button:hover{
     color: darkturquoise;
+    border: solid rgba(0, 0, 0, 0.500) 1px;
     background: whitesmoke;
     cursor: pointer;
 }

@@ -380,10 +380,12 @@ p{
         position: relative;
     }
     .content article h2{ /* title */
+        font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.7em;
     }
 
     .content article h3{ /* subtitle */
+        font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.3em;
         font-weight: 500;
         line-height: 2em;
@@ -393,6 +395,7 @@ p{
     }
 
     .content article h5{ /* sub-subtitle */
+        font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1em;
         font-weight: 300;
         margin: 0;
@@ -401,6 +404,7 @@ p{
     }
 
     .content article h4{ /* author + other info */
+        font-family: sans-serif;
         padding-top: 5px;
         font-size: 1em;
         font-style: italic;
