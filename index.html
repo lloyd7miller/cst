@@ -29,9 +29,11 @@
                 <!-- CONTENT AREA -->
                 <div class="content">
                     <h1>Casual Sports Talk</h1>
-                    <h2>Oh, hey there!</h2>
-                    <h5>Have a listen to the latest news in sports:</h5>
+                    <h2>Welcome to Casual Sports Talk</h2>
                     
+                    <br>
+                    <br>
+
                     <div id="soundcloud">
                         Loading... Just a sec...
                     </div>
@@ -45,7 +47,7 @@
 
 
                         //SoundCloud embed code, the placeholder is <REPLACE_ME_PLS>
-                        const SOUNDCLOUD_FRAME = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<REPLACE_ME_PLS>&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>'
+                        const SOUNDCLOUD_FRAME = '<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<REPLACE_ME_PLS>&color=%23ff7500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe>'
                         const SEARCH_FOR_STR = "episode"//must be lowwercase
 
 
@@ -93,14 +95,12 @@
                         </iframe>
                     </div> -->
                     <br>
+
+                    <!-- <h5 style="text-align: center">Listen to the latest podcast</h5> -->
+
                     <img id="itunes" onclick="location.href='itms://itunes.apple.com/nz/podcast/casualsportstalk/id1350600477?mt=2&ign-itsct=1350600477-1350600477&ign-itscg=0176&ign-mpt=uo%3D4'" src="./img/podcast.svg" alt="iTunes Podcast">
 
-                    <br>
-        
-                    <!-- <h3>Looking for more in-depth analysis?</h3> -->
-                    <div class="see-more-articles" onclick="location.href='articles.html'">
-                        See all articles
-                    </div>
+                    <br>                    
                     
                     <h3>Featured articles:</h3>
                     
@@ -270,6 +270,9 @@
                         
                         </article>
                     </div> <!-- end article-bucket-->
+                    <div class="see-more-articles" onclick="location.href='articles.html'">
+                        See all articles
+                    </div>
                 </div> <!-- end CONTENT -->
             </div> <!-- end CONTAINER -->
         </div>

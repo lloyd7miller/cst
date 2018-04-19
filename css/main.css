@@ -376,7 +376,7 @@ p{
 
     .content article{
         vertical-align: top; /* this fixes the default bottom allignment */
-        height: 70vh; /* height of the articles on main page (the previews) */
+        height: 55vh; /* height of the articles on main page (the previews) */
         position: relative;
     }
     .content article h2{ /* title */
