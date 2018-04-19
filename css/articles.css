@@ -1,0 +1,57 @@
+.content{
+    align-content: center;
+}
+
+.content .where-am-i{
+    margin: 0;
+}
+
+.boxes{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.boxes a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.box{
+    display: block;
+    width: 60%;
+    background: rgb(187, 187, 187);
+    padding: 7%;
+    border-radius: 5px;
+    margin: 3% auto;
+}
+
+@media only screen and (min-width: 1000px){
+    .box{
+        display: inline-block;
+        width: 13%;
+        background: rgb(187, 187, 187);
+        padding: 7%;
+        border-radius: 5px;
+        margin: 3% 1.5%;
+    }
+
+    .flex-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        text-align: center;
+    /* /////////////   problem when making the header smaller then 90px...   /////////// */
+        height: 90px; 
+        background: #01a093;
+    }
+
+}
+
+img{
+    width: 100%;
+    /* display: inline-block; */
+}
