@@ -1,0 +1,41 @@
+#headline{
+    margin-bottom: 15px;
+    display: inline-block; /* need to override index.css */
+}
+
+#messenger-button{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: #0084FF;
+    position: relative;
+    padding-left: 40px;
+    border-radius: 3px;
+}
+
+#messenger-button img{
+    max-width: 15%;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+/********************************************************************************/
+
+.content{
+
+}
+
+@media only screen and (max-width: 500px){
+    .content-text-container{
+        margin: 0 5% 0 5%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .content-text-container{
+        margin: 0 20% 0 20%;
+        text-align: center;
+    }
+}

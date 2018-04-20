@@ -1,0 +1,126 @@
+
+/* SIDENAV */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 18px 8px 18px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    line-height: 0.85em;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 650px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/********************************************************************************/
+
+/* HEADER */
+.flex-container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    text-align: center;
+}
+
+.flex-container > div{
+    width: 100px;
+}
+
+.flex-container div#filler {
+    background: #01a093;
+}
+
+    #filler-left{ /* because in the larger display style sheet, 
+        we hide this filler to push the CST logo to the left */
+        flex-grow: 2;
+        background: #01a093;
+    }
+
+.flex-container a{
+    height: inherit;
+    width: inherit;
+}
+
+.flex-container img{
+    /* vertical-align: middle; fixes the magic whitespace horizontally*/
+    /* line-height: 0; fixes the magic whitespace vertically */ 
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container-item{
+    display: none;
+}
+
+.menu-button{
+    min-width: 80px;
+    border-right: 1px solid rgba(0, 0, 0, 0.886);
+}
+
+#three-bars{
+    font-size: 30px;
+    cursor: pointer;
+}
+#cst-top-logo{
+    min-width: 260px;
+    border: none;
+    flex-grow: 5;
+}
+
+/* END HEADER */
+
+/********************************************************************************/
+
+/* CONTENT */
+
+.content h2{
+    font-size: 1.7em;
+}
+
+/* /////////////   how to center articles left-right   /////////// */
+.content article{
+    width: 96%;
+    border-radius: 10px;
+    background: #01a09322;
+    padding: 10px;
+    margin-bottom: 4%;
+}
+
+.content article:first-of-type{ /* to make room above the articles (bellow soundcloud iframe) */
+    margin-top: 4%;
+}
+
+/********************************************************************************/

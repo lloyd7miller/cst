@@ -1,0 +1,341 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+
+
+/********************************************************************************/
+
+/* SIDENAV */
+@media only screen and (min-width: 1024px){
+    .sidenav{
+        display: none;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width: 1024px){
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 18px 8px 18px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        line-height: 0.85em;
+        right: 25px;
+        font-size: 50px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 650px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+/********************************************************************************/
+
+/* HEADER */
+@media only screen and (min-width: 1024px){
+    .flex-container{
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        text-align: center;
+    /* /////////////   problem when making the header smaller then 90px...   /////////// */
+        height: 90px; 
+        background: #01a093;
+    }
+
+    #cst-top-logo{
+        min-width: 260px;
+        border: none;
+        flex-grow: 0;
+    }
+
+    .flex-container > div{
+        width: 10%;
+        border-left: solid rgba(0, 0, 0, 0) 1px; 
+        min-width: 93px; /* when we do this, it stops the squishing... 
+                            --> need to adjust for lower res... */
+    }
+
+    /* /////////////   how to slowly change the bkgrnd color   /////////// */
+    .flex-container div:hover{
+        background: #017b71;
+        border-left: solid rgb(0, 0, 0) 1px; 
+    }
+
+        #filler{
+            display: none;
+        }
+
+    .flex-container img{
+        float: left;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* /////////////   associate the encapsulating div with the respective link   /////////// */
+    .flex-container a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    /* /////////////   how to center text top and bottom   /////////// */
+    .flex-container .flex-container-item{
+        padding-top: 34px;
+    }
+
+    .menu-button{
+        display: none; /* Don't need the menu button here :) */
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width: 1024px){
+    .flex-container{
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .flex-container > div{
+        width: 100px;
+    }
+
+    .flex-container div#filler {
+        background: #01a093;
+    }
+
+        #filler-left{ /* because in the larger display style sheet, 
+            we hide this filler to push the CST logo to the left */
+            flex-grow: 2;
+            background: #01a093;
+        }
+
+    .flex-container a{
+        height: inherit;
+        width: inherit;
+    }
+
+    .flex-container img{
+        /* vertical-align: middle; fixes the magic whitespace horizontally*/
+        /* line-height: 0; fixes the magic whitespace vertically */ 
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flex-container-item{
+        display: none;
+    }
+
+    .menu-button{
+        min-width: 80px;
+        border-right: 1px solid rgba(0, 0, 0, 0.886);
+    }
+
+    #three-bars{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #cst-top-logo{
+        min-width: 260px;
+        border: none;
+        flex-grow: 5;
+    }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* END HEADER */
+
+
+
+/********************************************************************************/
+
+/* MAIN CONTENT AREA */
+@media only screen and (min-width: 1024px){
+    #main {
+        transition: margin-left .5s;
+    }
+
+    .content{
+        padding: 20px;
+        margin-top: 5px; /* to account for the margin of a p tag */
+    }
+
+    .content h2{
+        font-size: 2.5em;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width: 1024px){
+    .content{
+        padding: 20px;
+    }
+    
+    .content h2{
+        font-size: 2em;
+    }
+
+    /* /////////////   how to center articles left-right   /////////// */
+    .content article{
+        width: 96%;
+        border-radius: 10px;
+        background: #01a09322;
+        padding: 10px;
+        margin-bottom: 4%;
+    }
+
+    .content article:first-of-type{ /* to make room above the articles (bellow soundcloud iframe) */
+        margin-top: 4%;
+    }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.content h3{
+    font-size: 1.4em;
+}
+
+.content h5{
+    margin: 10px;
+    margin-left: 0; margin-right: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.content h6{
+    margin: 10px;
+    margin-left: 0; margin-right: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.content p{
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+    /* SOUNDCLOUD */
+    .soundcloud{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    /* END SOUNDCLOUD */
+
+
+/* ARTICLE */
+
+
+
+.content article h2{ /* title */
+    font-size: 1.7em;
+}
+
+.content article h3{ /* subtitle */
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.content article h4{ /* author + other info */
+    padding-top: 5px;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.content article p{
+    margin-top: 0; 
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 5px;
+}
+
+.content article p:first-of-type{
+    padding-top: 10px;
+}
+
+
+
+
+/********************************************************************************/
+
+/* FOOTER */
+
+footer{
+    position: fixed;
+    color: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    background: rgba(0, 0, 0, 0.173);
+    color: rgba(21, 21, 21, 0.653);
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+}
+    footer a, footer p{
+        /* color: rgb(164, 164, 164); */
+        font-size: 10px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    footer a{
+        text-decoration: underline;
+    }
+
+

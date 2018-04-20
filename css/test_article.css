@@ -1,0 +1,141 @@
+/* MAIN CONTENT AREA */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (min-width: 1210px){
+    .content{
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (min-width: 1024px) and (max-width: 1210px){
+    #main {
+        transition: margin-left .5s;
+    }
+
+    .content{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media only screen and (max-width: 1024px){
+    .content{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ TEXT SIZES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+    @media only screen and (min-width: 790px){ /* larger than 790px in width */
+        h1{ /* Title */
+            font-size: 3em;
+        }
+
+        h2{ /* Subtitles */
+            font-size: 1.5em;
+        }
+
+        h3{ /* Author - Date */
+            font-size: 1.3em;
+        }
+
+        h4{ /* Image captions */
+            font-size: 1.2em;
+        }
+    }
+
+    @media only screen and (max-width: 789px){ /* smaller than than 790px in width */
+        h1{ /* Title */
+            font-size: 2.3em;
+        }
+
+        h2{ /* Subtitles */
+            font-size: 1.2em;
+        }
+
+        h3{ /* Author - Date */
+            font-size: 1em;
+        }
+
+        h4{ /* Image captions */
+            font-size: 1em;
+        }
+    }
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    h3{ /* Author - Date */
+        padding-top: 5px;
+        font-style: italic;
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: #2e2e2eac;
+    }
+
+    p{
+        margin-bottom: 10px;
+        line-height: 2em;
+    }
+
+/********************************************************************************/
+/* Image containers */
+
+    .image-container{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h4{ /* Image captions */
+        text-align: center;
+        /* font-style: italic; */
+        margin: 0;
+        padding: 0;
+    }
+    
+    .image-container a{
+        font-size: 0.5em;
+        font-style: italic;
+        line-height: 0;
+        color: dodgerblue;
+        text-decoration: none;
+    }
+
+    .image-container a:hover{
+        color: green;
+    }
+
+    .image-container img{
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+/********************************************************************************/
+
+.content-text-container{
+    text-align: left;
+    margin: 0;
+}
+
+/********************************************************************************/
+
+
+
+
+/* Right Sidebar */
+
+.right-sidebar{
+    /* background: indigo;
+    width: 12%;
+    height: 100px; */
+    display: none;
+}
+
+/* need to fix this sidebar issue when it goes smaller than 1024 */
+@media only screen and (max-width: 1024px){
+
+}

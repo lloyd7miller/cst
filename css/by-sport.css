@@ -1,0 +1,52 @@
+.content{
+    align-content: center;
+}
+
+.content .where-am-i{
+    margin: 0;
+}
+
+.boxes{
+    margin: auto;
+    width: 100%;
+}
+
+.box{
+    display: inline-block;
+    width: 30%;
+    background: rgb(187, 187, 187);
+    padding: 5%;
+    margin: 3%;
+    border-radius: 5%;
+}
+
+.box img{
+    width: 100%;
+    /* display: inline-block; */
+}
+
+@media only screen and (min-width: 1000px){    
+    .boxes{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .box{
+        display: block;
+        width: 70%;
+        padding: 5%;
+        margin: 2em auto;
+        border-radius: 7px;
+        background-image: none;
+    }
+
+    .box a h2{
+        text-decoration: none;
+    }
+
+    .box img{
+        width: 10%;
+        display: none;
+    }
+}

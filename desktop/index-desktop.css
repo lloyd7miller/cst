@@ -1,0 +1,173 @@
+.hide{
+    display: none;
+}
+
+/* SCALING */
+@media only screen and (max-width: 1300px){
+    .container{
+        border-radius: 10px;
+        padding: 15px;
+        padding-top: 10px;
+        padding-right: 30px;
+        /* background: rgba(140, 140, 140, 0.324); */
+        margin-right: -100px;
+    }
+
+    .container h1{
+        padding-top: 10px;
+        -webkit-margin-before: 0em;
+    }
+}
+
+@media only screen and (max-width: 1019px) {
+    .container{
+        position: absolute;
+        margin-top: -105px;
+        left: 3vw;
+        top: 0;
+        border-radius: 10px;
+        width: 15em;
+        padding: 15px;
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+        background: rgba(140, 140, 140, 0.324);
+    }
+
+    .container h1{
+        padding-top: 0px;
+        -webkit-margin-before: 0em;
+    }
+
+    #the-works{
+        width: 280px;
+    }
+}
+
+/* end SCALING */
+
+/* GENERAL */
+body{
+    background-image: url("fb_guy.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+h1{
+    /* display: none; */
+    font-size: 50px;
+    margin: 0;
+}
+
+h2{
+    font-size: 30px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+p{
+    color: rgba(240, 248, 255, 0);
+    line-height: 2px;
+}
+
+/* end GENERAL */
+
+
+/* WRAPPER */
+.wrapper{
+    font-family: 'Varela Round', sans-serif;    
+    color:  white;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CONTAINER */
+.container{
+    position: absolute;
+    /* margin-left: 220px;
+    margin-top: 200px; */
+    right: 10vw;
+    top: 14vh;
+}
+    .container img{
+        width: 275px;
+        margin-left: -11px;
+        margin-bottom: 20px;
+        height: inherit;
+    }
+    
+    #blog-button a:hover{
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    #blog-button{
+        display: block;
+        width: 80%;
+        height: auto;
+        background: #01a093;
+        text-align: center;
+        margin-top: -15px;
+        border-radius: 6px;
+    }
+        #blog-button h3{
+            padding-top: 7px;
+            padding-bottom: 5px;
+        }
+
+#details{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/* SOCIAL */
+.social div{
+    margin-bottom: 10px;
+}
+
+.social div:first-child{
+    margin-top: 15px;
+}
+
+.fb{
+    margin-top: 24px;
+}
+
+/* end CONTAINER */
+        
+/* FOOTER */        
+footer{
+    position: fixed;
+    color: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    background: rgba(0, 0, 0, 0.372);
+    color: white;
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+}
+    footer a, footer p{
+        color: rgb(164, 164, 164);
+        font-size: calc(7px + 1vh)
+    }
+
+    footer a{
+        text-decoration: underline;
+    }
+
+    footer a:hover{
+        color: white;
+    }
+
+/* end WRAPPER */

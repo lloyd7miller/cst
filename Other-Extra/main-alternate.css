@@ -1,0 +1,140 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+/********************************************************************************/
+
+/* SIDENAV */
+/* see other files */
+
+/********************************************************************************/
+
+/* HEADER */
+/* see other files */
+
+/********************************************************************************/
+
+/* MAIN CONTENT AREA */
+
+#main {
+    transition: margin-left .5s;
+}
+
+.content{
+    padding: 20px;
+    margin-top: 5px; /* to account for the margin of a p tag */
+}
+
+.content h1{
+    display: none;
+}
+
+/* ~~~~~ difference in h2 ~~~~~ */
+
+.content h3{
+    font-size: 1.4em;
+}
+
+.content h5{
+    margin: 10px;
+    margin-left: 0; margin-right: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.content h6{
+    margin: 10px;
+    margin-left: 0; margin-right: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.content p{
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+    /* SOUNDCLOUD */
+    .soundcloud{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    /* END SOUNDCLOUD */
+
+
+/* ARTICLE */
+
+.content article h2{ /* title */
+    font-size: 1.7em;
+}
+
+.content article h3{ /* subtitle */
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.content article h4{ /* author + other info */
+    padding-top: 5px;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.content article p{
+    margin-top: 0; 
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 5px;
+}
+
+.content article p:first-of-type{
+    padding-top: 10px;
+}
+
+
+/********************************************************************************/
+
+/* FOOTER */
+
+footer{
+    position: fixed;
+    color: black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* overflow: hidden; */
+    background: rgba(0, 0, 0, 0.173);
+    color: rgba(21, 21, 21, 0.653);
+    padding: 0;
+    padding-left: 5px;
+    margin: 0;
+}
+    footer a, footer p{
+        /* color: rgb(164, 164, 164); */
+        font-size: 10px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    footer a{
+        text-decoration: underline;
+    }
+
+/********************************************************************************/

@@ -1,0 +1,77 @@
+h2, h3, h4, h5{
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content .where-am-i{
+    margin: 0;
+}
+
+.box{
+    display: block;
+    overflow: hidden;
+    width: 90%;
+    height: 20%;
+    background: #01a0931b;
+    padding: 5%;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.box:hover{
+    background: #01716751; /* to indicate the link has been clicked */
+}
+
+.box .gen-info{
+    /* float: left; */
+}
+
+.box img{
+    height: inherit;
+    width: 40%;
+    height: 200%;
+    height: inherit;   
+    float: left; 
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+p{
+    /* font-size: 1em; */
+}
+
+/* .more{
+    background: rgb(235, 210, 24);
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    padding: 5px;
+} */
+
+.more{
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    border-radius: 5px;
+    /* background-image: linear-gradient(to bottom, transparent, white); */
+}
+
+.more .more-button{
+    padding: 5px;
+    background: rgb(235, 210, 24);
+    border-radius: 5px;
+    border: solid rgba(0, 0, 0, 0.591) 1px;
+    text-align: center;
+    float: right;
+    margin: 0 10px 10px 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.more .more-button:hover{
+    color: darkturquoise;
+    background: whitesmoke;
+    cursor: pointer;
+}
