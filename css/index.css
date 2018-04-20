@@ -83,10 +83,13 @@
     }
 }
 
+.see-more-articles, .read-more-button{
+    background: #ebd218;
+    /* color: whitesmoke; */
+}
+
 .content .see-more-articles{
-    background: rgb(235, 210, 24); /* alt color #3282d8 */
     /* box-shadow: 5px 5px 10px grey; */
-    color: black;
     display: block;
     border-radius: 5px;
     border: solid rgba(0, 0, 0, 0.591) 1px;
@@ -128,7 +131,6 @@ article .bottom-fade-section{
 
 article .bottom-fade-section .read-more-button{
     padding: 5px;
-    background: #ebd218;
     border-radius: 5px;
     border: solid rgba(0, 0, 0, 0.500) 1px;
     float: right;
