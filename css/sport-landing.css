@@ -6,16 +6,57 @@ h2, h3, h4, h5{
     margin: 0;
 }
 
-.box{
-    display: block;
-    overflow: hidden;
-    width: 90%;
-    height: 20%;
-    background: #01a0931b;
-    padding: 5%;
-    margin: 10px 0;
-    border-radius: 10px;
-    position: relative;
+@media only screen and (min-width: 1000px){
+    .box img{
+        height: inherit;
+        width: 30%;
+        height: 200%;
+        height: inherit;   
+        float: left; 
+        padding-right: 5px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+
+    .box{
+        display: block;
+        overflow: hidden;
+        width: 90%;
+        height: 20%;
+        max-height: 250px;
+        background: #01a0931b;
+        padding: 2%;
+        margin: auto;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .box img{
+        height: inherit;
+        width: 40%;
+        height: 200%;
+        height: inherit;   
+        float: left; 
+        padding-right: 5px;
+        border-radius: 5px;
+    }
+
+    .box{
+        display: block;
+        overflow: hidden;
+        width: 90%;
+        height: 20%;
+        max-height: 250px;
+        background: #01a0931b;
+        padding: 5%;
+        margin: 10px 0;
+        border-radius: 10px;
+        position: relative;
+    }
 
 }
 
@@ -27,18 +68,14 @@ h2, h3, h4, h5{
     /* float: left; */
 }
 
-.box img{
-    height: inherit;
-    width: 40%;
-    height: 200%;
-    height: inherit;   
-    float: left; 
-    padding-right: 5px;
-    border-radius: 5px;
+.box h2{
+    font-size: 1.5em;   
 }
 
-p{
-    /* font-size: 1em; */
+.box p{
+    margin-top: 0; 
+    font-size: 1.1em;
+    line-height: 2em;
 }
 
 /* .more{

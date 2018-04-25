@@ -118,6 +118,7 @@ article{
 article .article-head:hover{
     cursor: pointer;
     color: rgba(0, 0, 0, 0.637);
+    text-decoration: underline;
 }
 
 article .bottom-fade-section{
