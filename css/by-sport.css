@@ -24,6 +24,10 @@
     border-radius: 5px;
 }
 
+.box:hover{
+    background: rgb(174, 174, 174);
+}
+
 .box img{
     width: 100%;
     /* display: inline-block; */

@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+.box:hover{
+    background: rgb(174, 174, 174);
+}
+
 .boxes{
     margin: auto;
     width: 100%;
