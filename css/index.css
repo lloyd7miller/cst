@@ -47,7 +47,6 @@
     /* /////////////   how to center articles left-right   /////////// */
     .content article{
         width: 96%;
-        border-radius: 10px;
         background: #01a09322;
         padding: 10px;
         margin-bottom: 4%;
@@ -67,6 +66,10 @@
     width: 200px;
     display: block;
     margin: auto;
+}
+
+.content #itunes:hover{
+    cursor: pointer;
 }
 
 .content #soundcloud{
@@ -92,7 +95,7 @@
     /* box-shadow: 5px 5px 10px grey; */
     display: block;
     border-radius: 5px;
-    border: solid rgba(0, 0, 0, 0.591) 1px;
+    border: solid rgba(0, 0, 0, 0.3) 1px;
     font-size: 0.9em;
     padding: 10px;
     margin: 25px auto;
@@ -113,6 +116,7 @@
 
 article{
     overflow: hidden;
+    border-radius: 5px;
 }
 
 article .article-head:hover{
@@ -127,13 +131,13 @@ article .bottom-fade-section{
     bottom: 0;
     right: 0;
     border-radius: 5px;
-    background-image: linear-gradient(to bottom, transparent, white);
+    /* background-image: linear-gradient(to bottom, transparent, rgb(245,245,245)); */
 }
 
 article .bottom-fade-section .read-more-button{
     padding: 5px;
-    border-radius: 5px;
-    border: solid rgba(0, 0, 0, 0.500) 1px;
+    border-radius: 3px;
+    border: solid rgba(0, 0, 0, 0.3) 1px;
     float: right;
     margin: 0 10px 10px 0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -141,7 +145,6 @@ article .bottom-fade-section .read-more-button{
 
 article .bottom-fade-section .read-more-button:hover{
     color: darkturquoise;
-    border: solid rgba(0, 0, 0, 0.500) 1px;
     background: whitesmoke;
     cursor: pointer;
 }

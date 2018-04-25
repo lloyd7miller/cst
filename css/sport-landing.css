@@ -6,52 +6,50 @@ h2, h3, h4, h5{
     margin: 0;
 }
 
-@media only screen and (min-width: 1000px){
+/* @@@@@@@@ START media queries @@@@@@@@ */
+
+/* largest screen size */
+@media only screen and (min-width: 1210px){
     .box img{
-        height: inherit;
         width: 30%;
-        height: 200%;
-        height: inherit;   
-        float: left; 
-        padding-right: 5px;
         margin-right: 10px;
-        border-radius: 5px;
+    }
+    
+    .content{
+        margin-left: 8%;
+        margin-right: 8%;
     }
 
     .box{
-        display: block;
-        overflow: hidden;
-        width: 90%;
-        height: 20%;
-        max-height: 250px;
-        background: #01a0931b;
+        width: 80%;
         padding: 2%;
-        margin: auto;
-        margin-bottom: 15px;
-        border-radius: 10px;
-        position: relative;
     }
-
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1210px){
+    
+    .box{
+        width: 90%;
+        padding: 2%;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px){
+    .box img{
+        width: 30%;
+        margin-right: 10px;
+    }
+}
+
+/* smallest screen size*/
 @media only screen and (max-width: 1000px){
     .box img{
-        height: inherit;
         width: 40%;
-        height: 200%;
-        height: inherit;   
-        float: left; 
-        padding-right: 5px;
-        border-radius: 5px;
     }
 
     .box{
-        display: block;
-        overflow: hidden;
         width: 90%;
-        height: 20%;
-        max-height: 250px;
-        background: #01a0931b;
         padding: 5%;
         margin: 10px 0;
         border-radius: 10px;
@@ -60,16 +58,39 @@ h2, h3, h4, h5{
 
 }
 
+/* ^^^^^^^^ END media queries ^^^^^^^^ */
+
+
+/* ******** START .box class ******** */
+
+.box{
+    display: block;
+    overflow: hidden;
+    height: 20%;
+    max-height: 250px;
+    background: #01a0931b;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    /* border: 1px solid rgba(0, 0, 0, 0.071); */
+    position: relative;
+}
+
+
 .box:hover{
     background: #01716751; /* to indicate the link has been clicked */
 }
 
-.box .gen-info{
-    /* float: left; */
+.box img{
+    height: 200%;
+    float: left; 
+    padding-right: 5px;
+    border-radius: 5px;
 }
 
 .box h2{
-    font-size: 1.5em;   
+    font-size: 1.5em;
+    margin-bottom: 5px;
 }
 
 .box p{
@@ -78,14 +99,10 @@ h2, h3, h4, h5{
     line-height: 2em;
 }
 
-/* .more{
-    background: rgb(235, 210, 24);
-    width: 50px;
-    text-align: center;
-    border-radius: 5px;
-    float: right;
-    padding: 5px;
-} */
+/* -------- END .box class -------- */
+
+
+/* ******** START .more class ******** */
 
 .more{
     width: 100%;
@@ -93,7 +110,7 @@ h2, h3, h4, h5{
     bottom: -2px;
     right: 0;
     border-radius: 5px;
-    /* background-image: linear-gradient(to bottom, transparent, white); */
+    /* background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.12)); */
 }
 
 .more .more-button{
@@ -112,3 +129,5 @@ h2, h3, h4, h5{
     background: whitesmoke;
     cursor: pointer;
 }
+
+/* -------- END .more class -------- */
