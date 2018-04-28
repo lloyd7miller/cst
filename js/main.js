@@ -24,9 +24,4 @@ function openArticles() {
     }
 }
 
-// document.write('\
-// <script type="text/javascript">\
-//     if (screen.width >= 1020) {\
-//     window.location = "index_desktop.html";\
-// }\
-// </script >');
+// document.write('');
