@@ -14,31 +14,29 @@ h2, h3, h4, h5{
         width: 30%;
         margin-right: 10px;
     }
-    
-    .content{
-        margin-left: 8%;
-        margin-right: 8%;
-    }
 
     .box{
-        width: 80%;
+        width: 70%;
         padding: 2%;
     }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1210px){
-    
     .box{
-        width: 90%;
+        width: 70%;
         padding: 2%;
     }
-    
 }
 
 @media only screen and (min-width: 1000px){
     .box img{
         width: 30%;
         margin-right: 10px;
+    }
+
+    .content{
+        width: 70%;
+        margin: 15px auto !important;
     }
 }
 
@@ -67,10 +65,10 @@ h2, h3, h4, h5{
     display: block;
     overflow: hidden;
     height: 20%;
-    max-height: 250px;
+    max-height: 220px;
     background: #01a0931b;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 5px;
     /* border: 1px solid rgba(0, 0, 0, 0.071); */
     position: relative;
@@ -78,8 +76,12 @@ h2, h3, h4, h5{
 
 
 .box:hover{
-    background: #01716751; /* to indicate the link has been clicked */
+    background: #01a0932c; /* to indicate the link has been clicked */
     cursor: pointer;
+}
+
+.box:last-of-type{
+    margin-bottom: 7%;
 }
 
 .box img{
