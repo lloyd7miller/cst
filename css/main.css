@@ -421,7 +421,10 @@ p{
     }
 
     .content article p:first-of-type{
-        padding-top: 10px;
+        margin-top: -5px; 
+        /* this was here before you introduced the image 
+        on the featured aticles, now the image margin 
+        takes care of this padding */
     }
 
     .content article img{

@@ -125,6 +125,11 @@ article .article-head:hover{
     text-decoration: underline;
 }
 
+article img{
+    margin: 15px auto !important;
+    /* max-width: 200px; */
+}
+
 article .bottom-fade-section{
     width: 100%;
     position: absolute;
