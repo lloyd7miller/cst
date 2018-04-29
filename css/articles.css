@@ -22,6 +22,11 @@
     font-size: 30px;
     text-align: center;
 }
+
+.box{
+    transition: 170ms background ease-out;
+}
+
 @media only screen and (max-width: 1000px){
     .box{
         display: block;

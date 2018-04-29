@@ -1,3 +1,7 @@
+:root{
+    --trans-time: 170ms;
+}
+
 /******************************************************/
 
 /* MAIN CONTENT AREA */
@@ -103,6 +107,13 @@
     width: 50%;
     text-align: center;
     font-size: 1.5em;
+    transition: var(--trans-time) background ease-out, var(--trans-time) color ease-out;
+
+    /* Text-selection */
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
 }
 
 .content .see-more-articles:hover{
@@ -146,6 +157,12 @@ article .bottom-fade-section .read-more-button{
     float: right;
     margin: 0 10px 10px 0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: var(--trans-time) background ease-out, var(--trans-time) color ease-out;
+    /* Text-selection */
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
 }
 
 article .bottom-fade-section .read-more-button:hover{

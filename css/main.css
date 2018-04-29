@@ -120,6 +120,10 @@ p{
         border-left: solid rgba(0, 0, 0, 0) 1px; 
         min-width: 93px; /* when we do this, it stops the squishing... 
                             --> need to adjust for lower res... */
+        transition-property: background, border; /* which item is this transition applying to? */
+        transition-duration: 150ms;
+        transition-timing-function: ease-out;
+        transition-delay: 0; /* how long it takes to get started */
     }
 
     /* /////////////   how to slowly change the bkgrnd color   /////////// */
@@ -466,3 +470,6 @@ footer{
     }
 
 
+/*************************************************/
+/****************** ODD CLASSES ******************/
+/*************************************************/
