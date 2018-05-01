@@ -19,6 +19,8 @@ h2{
 p{
     font-family: Georgia, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
 }
 
 
