@@ -67,6 +67,51 @@
     display: none;
 }
 
+.youtube{
+    align-content: center;
+    text-align: center;
+    min-width: 300px;
+    width: 30%;
+    padding: 10px 0;
+    margin: auto;
+    transition: all ease-in var(--trans-time);
+    box-shadow: inset 0 0 0 1px rgba(70, 157, 147, 0.3);
+    border-radius: var(--border-radius);
+}
+
+.youtube:hover{
+    background: rgba(0, 0, 0, 0.023);
+    color: #469D93;
+    box-shadow: inset 0 0 0 3px #469D93;
+    cursor: pointer;
+}
+
+.youtube #fancy{
+    font-family: 'Lato', sans-serif;
+    font-size: 200%;
+    color: #469D93;
+    margin-top: 0;
+}
+
+.youtube img{
+    max-height: 30px;
+}
+
+@media only screen and (max-width: 700px){
+    .youtube{
+        font-size: 0.7em;
+        min-width: 220px;
+    }
+
+    .youtube img{
+        max-height: 20px;
+    }
+}
+
+#welcome{
+    text-align: center;
+}
+
 #social-tagline{
     font-size: 1.2em;
     text-align: center;
