@@ -93,6 +93,13 @@
     margin-top: 0;
 }
 
+.youtube #new{
+    font-family: 'Lato', sans-serif;
+    font-size: 150%;
+    color: #469D93;
+    margin-top: 0;
+}
+
 .youtube img{
     max-height: 30px;
 }
