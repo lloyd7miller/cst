@@ -60,6 +60,10 @@
     .content h3{
         font-size: 1.4em;
     }
+
+    #medium-widget{
+        width: 100% !important;
+    }
 }
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -235,6 +239,23 @@
 
 /******************************************************/
 /* Article */
+
+#medium-widget{
+    width: 70%;
+    margin: auto;
+}
+
+#medium-widget img{
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* No longer used: */
 
 article{
     overflow: hidden;

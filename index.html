@@ -114,10 +114,17 @@
                     <br>
                     <br>
                     <!-- <h3>Latest articles:</h3> -->
-                    <div class='sk-ww-medium-publication-feed' data-embed-id='16737' style="width: 50%">
+                    <!-- <div class='sk-ww-medium-publication-feed' data-embed-id='16737' style="width: 50%">
                     </div>
-                    <script src='https://www.sociablekit.com/app/embed/medium-publication-feed/widget.js'></script>
+                    <script src='https://www.sociablekit.com/app/embed/medium-publication-feed/widget.js'></script> -->
+                    
+                    <div id="medium-widget"></div>
+                    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+                    <script>
+                        MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@casualsportstalk", "postsPerLine": 2, "limit": 4, "picture": "big", "fields": ["description", "publishAt"], "ratio": "landscape" } })
+                    </script>
 
+                    
                     <br>
                     <br>
                     <br>
@@ -136,7 +143,9 @@
 
         <!-- <footer><p>&copy; LTM designs</p></footer> -->
     </div>
-</body>
+
+    </body>
+
 </html>
 
 
