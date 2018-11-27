@@ -61,7 +61,7 @@
         font-size: 1.4em;
     }
 
-    #medium-widget{
+    .medium{
         width: 100% !important;
     }
 }
@@ -240,12 +240,12 @@
 /******************************************************/
 /* Article */
 
-#medium-widget{
+.medium{
     width: 70%;
     margin: auto;
 }
 
-#medium-widget img{
+.medium img{
     border-radius: 5px;
 }
 
