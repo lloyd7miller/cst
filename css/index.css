@@ -46,7 +46,7 @@
     }
     
     .content h2{
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     /* /////////////   how to center articles left-right   /////////// */
@@ -74,12 +74,12 @@
 .youtube{
     align-content: center;
     text-align: center;
-    min-width: 300px;
-    width: 30%;
+    min-width: 100px;
+    width: 22%;
     padding: 10px 0;
     margin: auto;
     transition: all ease-in var(--trans-time);
-    box-shadow: inset 0 0 0 1px rgba(70, 157, 147, 0.3);
+    box-shadow: inset 0 0 0 1px rgba(70, 157, 147, 0.0);
     border-radius: var(--border-radius);
 }
 
@@ -206,8 +206,8 @@
 }
 
 .see-more-articles, .read-more-button{
-    background: #ebd218;
-    /* color: whitesmoke; */
+    background: #01a093e0;
+    color: whitesmoke;
 }
 
 .content .see-more-articles{
@@ -215,11 +215,11 @@
     display: block;
     border-radius: var(--border-radius);
     border: solid rgba(0, 0, 0, 0.3) 1px;
-    font-size: 0.9em;
+    font-size: 0.7em;
     padding: 10px;
     margin: 25px auto;
     height: auto;
-    width: 50%;
+    width: 35%;
     text-align: center;
     font-size: 1.5em;
     transition: var(--trans-time) background ease-out, var(--trans-time) color ease-out;
