@@ -220,9 +220,10 @@
     margin: 25px auto;
     height: auto;
     width: 35%;
+    min-width: 240px;
     text-align: center;
     font-size: 1.5em;
-    transition: var(--trans-time) background ease-out, var(--trans-time) color ease-out;
+    transition: var(--trans-time) background ease-out, 250ms, color ease-out;
 
     /* Text-selection */
         -webkit-user-select: none; /* Safari */        
@@ -233,8 +234,8 @@
 
 .content .see-more-articles:hover{
     cursor: pointer;
-    color: darkturquoise;
-    background: whitesmoke;
+    color: #f5f5f5;
+    background: #55c6b9cc;
 }
 
 /******************************************************/
