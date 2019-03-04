@@ -117,6 +117,10 @@
     .youtube img{
         max-height: 20px;
     }
+
+    .scoreboard{
+        display: none;
+    }
 }
 
 #welcome{
@@ -250,7 +254,16 @@
     border-radius: 5px;
 }
 
+/* .scoreboard::after{
+    content: '';
+    color: red;
+} */
 
+.scoreboard{
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+}
 
 
 
